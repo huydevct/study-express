@@ -24,5 +24,8 @@ Controller(MVC): extends (path)
 static files: app.use(express('public));
 
 Validation: NEVER TRUST YOUR USERS
+            validate user input
+
+middleware: Writing middleware for use in Express app
             
     
