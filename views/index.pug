@@ -1,2 +1,8 @@
-h1 Hello #{name}
-a(href="/users") User
+//- h1 Hello #{name}
+extends ../views/layouts/common.pug
+
+block content
+    h1 Hello World!
+    a(href="/users") User
+
+    img(src="/images/logo.png")

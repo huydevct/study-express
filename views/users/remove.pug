@@ -1,0 +1,10 @@
+extends ../layouts/common.pug
+
+block content
+    h1 Remove user
+
+    form(action="/users/remove", method="POST")
+        label Name
+        input(name="name", type="text")
+
+        button Remove

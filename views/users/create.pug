@@ -1,6 +1,14 @@
-h1 Create  user
-form(action="/users/create", method="POST")
-    label Name
-    input(name="name", type="text")
+extends ../layouts/common.pug
 
-    button Create
+block content
+    h1 Create  user
+    form(action="/users/create", method="POST")
+      .form-group
+        label(for="name") Name
+        input#name.form-control(name="name", type="text")
+
+        label(for="phone") Phone
+        input#phone.form-control(name="phone", type="text")
+
+        button.btn.btn-primary Create
+    a.btn.btn-primary(href="/users") Back
