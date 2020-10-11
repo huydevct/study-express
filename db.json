@@ -1,17 +1,14 @@
 {
   "users": [
     {
-      "name": "huy",
+      "name": "Huy",
       "phone": "0987654321",
-      "id": "JZaOAhaZ6"
+      "id": "JZaOAhaZ6",
+      "email": "huy@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     },
     {
-      "name": "van anh",
-      "phone": "",
-      "id": "sUjW0iebq"
-    },
-    {
-      "name": "van anh",
+      "name": "Van Anh",
       "phone": "657483920",
       "id": "l62zILRXT"
     }

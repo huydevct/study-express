@@ -27,5 +27,15 @@ Validation: NEVER TRUST YOUR USERS
             validate user input
 
 middleware: Writing middleware for use in Express app
+
+Cookie: use cookie-parser
+
+Authentication(login):  in project
+
+md5: use md5 npm
+
+signed cookie: in project
+
+Environment variables: 
             
     
