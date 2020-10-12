@@ -1,7 +1,7 @@
 var db = require('../db');
 
 module.exports.requireAuth = function(req,res,next) {
-    console.log(req.cookies, req.signedCookies);
+    // console.log(req.cookies, req.signedCookies);
     if(!req.signedCookies.userId){
         res.render('./auth/login');
         return;
@@ -18,7 +18,7 @@ module.exports.requireAuth = function(req,res,next) {
 
     res.cookie('userId', user.id, {
         signed: true
-    })
+    });
     res.locals.user = user;
 
     next();

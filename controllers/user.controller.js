@@ -1,7 +1,6 @@
 var db = require('../db');
 var shortid = require('shortid');
 
-
 module.exports.index = function(req, res){
     res.render('users/index', {
         users: db.get('users').value()
@@ -20,14 +19,14 @@ module.exports.search = function(req,res){
 };
 
 module.exports.create = function(req,res){
-    console.log(req.cookies);
+    // console.log(req.cookies);
     res.render('users/create');
 };
 
 module.exports.postCreate = function(req,res){
     req.body.id = shortid.generate();
-
-    console.log(res.locals);
+    req.body.avatar = req.file.path.split('\\').slice(1).join('\\');
+    // console.log(res.locals);
     
     db.get('users').push(req.body).write();
     res.render('users/create');

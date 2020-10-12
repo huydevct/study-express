@@ -36,6 +36,26 @@ md5: use md5 npm
 
 signed cookie: in project
 
-Environment variables: 
+Environment variables: dotenv
+                       never commit .env to github
+
+Debug node.js app:  nodemon --inspect index.js
+                    Dev tool of Chrome
+
+Pagination: items in page n, with x items per page:
+            begin = (n-1)*x
+            end = (n-1)*x+x = n*x
+            Items = array.slice(begin, end)
+
+File Upload: multer
+
+Session: in project
+
+CSRF attack(Cross-site request forgecy): Transfer money form
+                                         csurf
+                                         
+Install MongoDB: 
+                                         
+             
             
     

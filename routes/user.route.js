@@ -1,8 +1,11 @@
 var express = require('express');
+var multer  = require('multer');
 
 var controller = require('../controllers/user.controller');
 var validate = require('../validate/user.validate');
 var authMiddlewares = require('../middlewares/auth.middleware');
+
+var upload = multer({ dest: './public/uploads/' });
 
 var router = express.Router();
 
@@ -16,7 +19,10 @@ router.get('/cookie', function(req, res, next){
 });
 router.get('/create', controller.create);
 
-router.post('/create', validate.postCreate, controller.postCreate);
+router.post('/create', 
+    upload.single('avatar'), 
+    validate.postCreate, 
+    controller.postCreate);
 
 router.get('/search', controller.search);
 
