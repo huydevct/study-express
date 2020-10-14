@@ -54,7 +54,7 @@ Session: in project
 CSRF attack(Cross-site request forgecy): Transfer money form
                                          csurf
                                          
-Install MongoDB: 
+Install MongoDB: in ubuntu
                                          
              
             
