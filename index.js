@@ -13,6 +13,9 @@ var productRoute = require('./routes/product.route');
 var cartRoute = require('./routes/cart.route');
 var transferRoute = require('./routes/transfer.route');
 var csurf = require('csurf');
+var mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGO_URL);
 
 
 var authMiddlewares = require('./middlewares/auth.middleware');
