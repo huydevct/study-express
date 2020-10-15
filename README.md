@@ -74,7 +74,12 @@ REST API: GET    /products       -> Get all products []
 
 Error handling in ExpressJS: in 3-errors-handling and 4-errors  
 
-Deploy to heroku: 
+Deploy to heroku: Previous deploy to heroku:
+                    - Fix port var use env
+                    - Check package.json
+                    - Not save uploads file  on heroku (Cloudinary)
+                    - Replace code lowDB, use MongoDB
+                    - Heroku just save source code
 
 NEED TO READ: expressJs
               MongoDB tutorial
