@@ -55,7 +55,31 @@ CSRF attack(Cross-site request forgecy): Transfer money form
                                          csurf
                                          
 Install MongoDB: in ubuntu
-                                         
+
+Mongoose: MongoDB tutorial
+          Mongoose
+
+HTTP API: CLI(Command Line Interface)
+          GUI(Graphic User Interface)
+          API(Application Programming Interface)
+          
+REST API: GET    /products       -> Get all products []
+          GET    /products/:id   -> Get onr products {}
+          POST   /products       -> Create product
+          PUT    /products/:id   -> Replace/Create product
+          PATCH  /products/:id   -> Update product
+          DELETE /products/:id   -> Delete a product
+
+          Authentication Header (JWT) not Cookie     
+
+Error handling in ExpressJS: in 3-errors-handling and 4-errors  
+
+Deploy to heroku: 
+
+NEED TO READ: expressJs
+              MongoDB tutorial
+              MongooseJs
+              
              
             
     

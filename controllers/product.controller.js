@@ -14,8 +14,16 @@ module.exports.index = async function(req,res,next){
     //     products: db.get('products').value().slice(start, end)
     //     // products: db.get('products').drop(drop).take(perPage).value()
     // });
-    var products = await Product.find();
-    res.render('products/index', {
-        products: products
+
+    // errors handling:
+    try{
+        var products = await Product.find();
+        // products.foo();
+        res.render('products/index', {
+            products: products
     });
+    } catch (error){
+        next(error);
+    }
+    
 };
